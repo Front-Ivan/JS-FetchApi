@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        button:hover {
+            opacity: .9;
+            transition: .7s;
+        }
+
+        button {
+            transition: .7s;
+        }
+    </style>
+</head>
+<body onload="fetchHandler()">
+
+<div style="display: flex; flex-direction: column;">
+
+    <button id="update" style="background-color: #121a25; color: #66c0f4; font-weight: bold; font-size: 25px; border-bottom: 1px solid #4d4b48; width: 100vw; height: 15vh;">
+        Обновить
+    </button>
+
+    <div style="display: flex; justify-content: center; background-color: #171a21; width: 100vw; height: 85vh;">
+        <div style="display: flex; padding-top: 100px; justify-content: center;">
+
+            <div style="display: flex; flex-direction: column; align-items: center; color: #c6d4df; width: 75vw; font-weight: bold; font-size: 20px">
+                <p id="author" style="margin-bottom: 15px"></p>
+                <p id="quote"></p>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
